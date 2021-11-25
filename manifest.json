@@ -1,0 +1,15 @@
+{
+  "name": "not translate code",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "谷歌翻译页面的时候不再翻译代码",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.elastic.co/guide/en/elasticsearch/reference/7.6/*"],
+      "js": ["no_translate.js"]
+    }
+  ]
+}
